@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a routerLink="/login"><h2 class="inactive underlineHover"> Sign In </h2></a>
+    <a routerLink="/register"><h2 class="active"> Sign Up </h2></a>
+
+    <!-- Login Form -->
+    <form [formGroup]="userRegisterForm" (ngSubmit)="register()">
+      <input type="text" id="login" class="fadeIn second" formControlName="username" placeholder="username">
+      <input type="text" id="password" class="fadeIn third" formControlName="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Register">
+    </form>
+  </div>
+</div>

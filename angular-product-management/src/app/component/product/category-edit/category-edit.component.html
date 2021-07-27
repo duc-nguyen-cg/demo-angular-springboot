@@ -1,0 +1,12 @@
+<h1>Edit Category</h1>
+<form [formGroup]="categoryEditForm" (ngSubmit)="editCategory()">
+  <table>
+    <tr>
+      <td>Name: </td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button>Save changes</button></td>
+    </tr>
+  </table>
+</form>

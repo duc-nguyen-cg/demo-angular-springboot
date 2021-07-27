@@ -1,0 +1,12 @@
+<h1>Delete Category</h1>
+<form [formGroup]="categoryDeleteForm" (ngSubmit)="deleteCategory()">
+  <table>
+    <tr>
+      <td>Name :</td>
+      <td><input readonly type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button>Delete</button></td>
+    </tr>
+  </table>
+</form>
